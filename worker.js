@@ -555,6 +555,6 @@ router.all('*', () => {
 // Fonction de gestion des requêtes
 export default {
   async fetch(request, env, ctx) {
-    return router.handle(request);
+    return router.fetch(request, env, ctx);
   },
 }; 

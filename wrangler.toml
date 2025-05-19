@@ -11,8 +11,4 @@ BASE_URL = "https://www.autun-infos.com"
 # routes = ["api.example.com/autun-news/*"]
 
 [build]
-command = "npm run build"
-
-# Activer un nombre plus élevé de requêtes
-[limits]
-cpu_ms = 50 
+command = "npm run build" 
