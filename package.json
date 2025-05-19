@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "demo": "node demo.js"
+    "demo": "node demo.js",
+    "build": "webpack --config webpack.config.js",
+    "deploy": "wrangler publish",
+    "dev:worker": "wrangler dev worker.js"
   },
   "keywords": [
     "api",
@@ -24,6 +27,15 @@
     "mongoose": "^7.0.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "assert": "^2.1.0",
+    "https-browserify": "^1.0.0",
+    "nodemon": "^2.0.22",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^5.1.4",
+    "wrangler": "^3.0.0"
   }
 }
